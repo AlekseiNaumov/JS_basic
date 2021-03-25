@@ -15,3 +15,4 @@ let b = '108';
 let c = a + b;
 alert(c);
 alert(typeof(c));
+

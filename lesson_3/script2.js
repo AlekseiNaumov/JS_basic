@@ -5,14 +5,13 @@
 // b) Организовать функцию countBasketPrice, которая будет считать стоимость корзины.
 
 // корзина состоит из массива в который входят три масива 1. Название товара 2. кол-во товара 3. цена за еденицу
-let basket = [['Яблоки', 'Манго', 'Апельсины', 'Melon'], [1, 3 , 2, 5], [50, 120, 70, 100]];
+let basket = [['Яблоки', 50, 1], ['Манго', 120, 3], ['Апельсины', 70, 2], ['Melon', 100, 5]];
 
 function countBasketPrice(basket) {
-    let nameGoods = basket[0];
     let result;
     let sumGoods = 0;
-    for (let i = 0; i < nameGoods.length; i++) {
-        result = basket[1][i] * basket[2][i];
+    for (let i = 0; i < basket.length; i++) {
+        result = basket[i][1] * basket[i][2];
         sumGoods += result;
     }
     return sumGoods

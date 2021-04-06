@@ -35,6 +35,9 @@ function getObject () {
         console.log(obj)
         return obj;
     } else {
+        while (arr.length < 3) {
+            arr.push(0);
+        }
         obj.units = arr[0];
         obj.tens = arr[1];
         obj.hundreds = arr[2];
